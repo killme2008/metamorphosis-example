@@ -32,6 +32,7 @@ public class Help {
         final MetaClientConfig metaClientConfig = new MetaClientConfig();
         final ZKConfig zkConfig = new ZKConfig();
         zkConfig.zkConnect = "127.0.0.1:2181";
+        zkConfig.zkRoot = "/meta";
         metaClientConfig.setZkConfig(zkConfig);
         return metaClientConfig;
     }
