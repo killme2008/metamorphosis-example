@@ -28,6 +28,14 @@ import com.taobao.metamorphosis.client.consumer.MessageIterator;
 import com.taobao.metamorphosis.cluster.Partition;
 
 
+/**
+ * We don't use synchronous consumer in production.
+ * 
+ * @Deprecated
+ * @author apple
+ * 
+ */
+@Deprecated
 public class SyncConsumer {
     public static void main(final String[] args) throws Exception {
         // New session factory,强烈建议使用单例
